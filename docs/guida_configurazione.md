@@ -4,21 +4,30 @@ Questa guida illustra i passaggi necessari per configurare l'ambiente di
 sviluppo, installare le dipendenze essenziali e configurare l'IDE
 OpenCode con il plugin di autenticazione OpenAI.
 
-## 1. 🌳 Installazione di Node.js (LTS)
+## 1. 🌳 Scaffolding
 
-Node.js è essenziale e deve essere installato per eseguire gli script di
-progetto e le dipendenze. Si raccomanda la versione LTS (Long-Term
-Support).
+Apri un terminale e posizionati nella cartella in cui desideri creare il progetto.
 
-### macOS e Windows
+(es. `C:\users\nome_utente\repo`)
 
-Scarica e installa l'ultima versione LTS dal sito ufficiale di Node.js.
+Lancia il comando per creare il progetto:
 
-Verifica l'installazione aprendo il terminale (o Prompt dei
-comandi/PowerShell su Windows):
+Su Windows
 
-    node -v
-    npm -v
+```ps
+
+$Project = "<Nome Progetto>"; curl.exe -sL "https://raw.githubusercontent.com/techreloaded-ar/AIRchetipo_dist/refs/heads/main/install_airchetipo.ps1" -o install.ps1 `
+&& powershell -ExecutionPolicy Bypass -File .\install.ps1 --Project $Project `
+&& Remove-Item install.ps1
+
+```
+
+Su Mac
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/techreloaded-ar/AIRchetipo_dist/refs/heads/main/install_airchetipo.sh | bash -s -- <Nome Progetto>
+```
+
 
 ## 2. 📝 Installazione di OpenCode
 
