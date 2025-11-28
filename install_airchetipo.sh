@@ -18,6 +18,8 @@ if curl -L "https://github.com/techreloaded-ar/AIRchetipo_dist/archive/refs/head
     echo "Estrazione archivio..."
     unzip -q main.zip
     echo "Rinomina directory in $PROJECT..."
+    rm AIRchetipo_dist-main/install_airchetipo.sh
+    rm AIRchetipo_dist-main/install_airchetipo.ps1
     mv AIRchetipo_dist-main "$PROJECT"
     echo "Pulizia file temporanei..."
     rm main.zip
