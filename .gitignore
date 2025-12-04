@@ -32,7 +32,6 @@ Thumbs.db
 
 # AI assistant files
 CLAUDE.md
-AGENTS.md
 .ai/*
 cursor
 .gemini
@@ -70,4 +69,4 @@ z*/
 web-bundles/
 
 #AIRchetipo Agents File
-docs/backlog.yaml
+docs/
